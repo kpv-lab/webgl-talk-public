@@ -1,0 +1,17 @@
+import { Canvas } from '@react-three/fiber'
+import { ReactElement } from 'react'
+import { ClownFish } from './ClownFish'
+
+export function Main(): ReactElement {
+  ...
+  return (
+    <Canvas>
+      <ambientLight />
+      <spotLight position={[0, 0, 5]} />
+      <ClownFish
+        opacity={opacity}
+        position={position}
+      />
+    </Canvas>
+  )
+}

@@ -1,0 +1,67 @@
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.app {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.dots {
+  position: absolute;
+  left: 16px;
+  width: auto;
+  height: 16px;
+  bottom: 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+.dot-group {
+  display: flex;
+  height: 16px;
+  flex-direction: row;
+  width: auto;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  border: 1px solid #999;
+  margin-right: 4px;
+}
+
+.dot .inner {
+  margin: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: #999;
+}
+
+.script {
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  text-align: left;
+  padding: 0 16px;
+  transition: all 0.2s ease-in-out;
+  backdrop-filter: blur(6px);
+}
+
+.script.hidden {
+  width: 32px;
+  height: 32px;
+  padding: 0px;
+}
